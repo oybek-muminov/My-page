@@ -1,0 +1,223 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_section {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px 60px;
+    gap: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+
+.left_section {
+    flex: 0 0 30%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding-bottom: 20px;
+    animation: start_left 1s ease forwards;
+    transform: translateY(-100%);
+}
+
+.profil {
+    position: relative;
+}
+
+.profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+}
+
+.profil > h1 {
+    position: absolute;
+    margin: 5px 5%;
+    left: 0;
+    bottom: 0;
+    font-size: 2rem;
+    font-family: 'Times New Roman';
+}
+
+.profil_info {
+    width: 80%;
+    margin: 0 10%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+i {
+    margin-right: 10px;
+    color: green;
+}
+
+.profil_info h3 {
+    margin-top: 40px;
+}
+
+/*---------------------------------------------------------*/
+
+.percents {
+    height: 20px;
+    background: green;
+    border-radius: 10px;
+}
+
+.percent {
+    position: relative;
+    width: 100%;
+    background: #c7c7c7;
+    overflow: hidden;
+}
+
+.percents p {
+    position: absolute;
+    left: 45%;
+    top: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.percent .html {
+    width: 80%;
+}
+
+.percent .css {
+    width: 70%;
+}
+
+.percent .js {
+    width: 60%;
+}
+
+.percent .python {
+    width: 50%;
+}
+
+.percent .uz {
+    width: 100%;
+}
+
+.percent .en {
+    width: 50%;
+}
+
+.percent .ru {
+    width: 45%;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.right_section {
+    flex: 0 0 70%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: start_right 1s ease forwards;
+    animation-delay: 0.5s;
+    transform: translateX(100%);
+}
+
+.about_me {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.about_me h2 {
+    margin: 40px 0 20px 20px;
+}
+
+.about_me a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.project {
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: -4px 4px 4px rgb(193, 193, 193);
+}
+
+.project > div {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*---------------------------------*/
+
+.pj1>div{
+    transform: translateY(-100%);
+}
+
+.pj1:hover div {
+    animation: anim1 0.5s ease-in forwards;
+}
+
+.pj2>div {
+    display: none;
+}
+
+.pj2:hover div {
+    animation: anim2 0.5s ease-in forwards;
+    display: flex;
+}
+
+.pj3>div {
+    transform: translateX(100%) rotate(90deg);
+}
+
+.pj3:hover div {
+    animation: anim3 0.5s ease-in forwards;
+}
+
+/*---------------------------------*/
+
+.pj1 {
+    background: url(../images/loyiha1.jpg) no-repeat center/cover;
+}
+
+.pj2 {
+    background: url(../images/loyiha2.jpg) no-repeat center/cover;
+}
+
+.pj3 {
+    background: url(../images/loyiha3.jpg) no-repeat center/cover;
+}
+
+/*----------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a, footer p{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#git_icon {
+    color: rgb(0, 1, 6);
+    font-size: 2rem;
+    margin: 0;
+}
