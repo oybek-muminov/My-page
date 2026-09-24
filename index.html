@@ -2,126 +2,363 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My page</title>
-    <link rel="icon" type="image/png" href="./images/logo1.png">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/animation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oybek Moʻminov - Web Developer Portfolio. Frontend and Full Stack projects.">
+    <meta name="author" content="Oybek Moʻminov">
+    <meta name="theme-color" content="#10b981">
 
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oybek Moʻminov | Web Developer">
+    <meta property="og:description" content="Oybek Moʻminov - Web Developer Portfolio. Frontend and Full Stack projects.">
+    <meta property="og:image" content="./images/profil1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oybek Moʻminov | Web Developer">
+    <meta name="twitter:description" content="Oybek Moʻminov - Web Developer Portfolio. Frontend and Full Stack projects.">
+    <meta name="twitter:image" content="./images/profil1.webp">
+    
+    <title>Oybek Moʻminov | Web Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/logo1.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="main_section">
-        <section class="left_section">
-            <div class="profil">
-                <img src="./images/profil1.webp" alt="profil image">
-                <h1>Oybek Mo`minov</h1>
+    <div class="page-wrapper">
+        <div class="main_section">
+            <!-- Left Sidebar / Profile Section -->
+            <aside class="left_section">
+                <div class="profil">
+                    <div class="avatar-container">
+                        <img src="./images/profil1.webp" alt="Oybek Moʻminov" width="160" height="160">
+                        <span class="status-badge" title="Open to opportunities">
+                            <span class="pulse-dot"></span> Available
+                        </span>
+                    </div>
+                    <h1 class="user-name">Oybek Moʻminov</h1>
+                    <span class="role-badge"><i class="fa-solid fa-code"></i> Web Developer</span>
+                </div>
+
+                <div class="profil_info">
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Developer</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Namangan, Uzbekistan</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:oybekmominov227@gmail.com">oybekmominov227@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/oybek-muminov" target="_blank" rel="noopener noreferrer">oybek-muminov</a>
+                        </li>
+                    </ul>
+
+                    <hr class="divider">
+
+                    <!-- Skills Section -->
+                    <div class="section-skills">
+                        <h3><i class="fa-solid fa-layer-group"></i> Skills</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-value">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--percent: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="skill-value">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--percent: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React & Next.js</span>
+                                <span class="skill-value">65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--percent: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-value">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--percent: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-value">55%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="--percent: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+
+                    <!-- Languages Section -->
+                    <div class="section-languages">
+                        <h3><i class="fa-solid fa-globe"></i> Languages</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Oʻzbek</span>
+                                <span class="skill-value">Native (100%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill uz" style="--percent: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">English</span>
+                                <span class="skill-value">Intermediate (50%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill en" style="--percent: 50%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Russian</span>
+                                <span class="skill-value">Basic (45%)</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill ru" style="--percent: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </aside>
+
+            <!-- Right Content Section -->
+            <main class="right_section">
+                <div class="about_me">
+                    <!-- Education & Mentors Section -->
+                    <section class="content-block">
+                        <div class="block-title">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h2>Education & Mentors</h2>
+                        </div>
+
+                        <div class="cards-list">
+                            <!-- Mentor 1 -->
+                            <article class="info-card">
+                                <div class="card-header">
+                                    <div class="mentor-title">
+                                        <h3>Ulugʻbek Samigʻjonov</h3>
+                                    </div>
+                                    <div class="social-badges">
+                                        <a href="https://t.me/ulugbeksamigjonov" target="_blank" rel="noopener noreferrer" class="badge tg">
+                                            <i class="fa-brands fa-telegram"></i> Telegram
+                                        </a>
+                                        <a href="https://www.instagram.com/ulugbeksamigjonov/" target="_blank" rel="noopener noreferrer" class="badge ig">
+                                            <i class="fa-brands fa-instagram"></i> Instagram
+                                        </a>
+                                        <a href="https://www.youtube.com/c/ulugbeksamigjonov" target="_blank" rel="noopener noreferrer" class="badge yt">
+                                            <i class="fa-brands fa-youtube"></i> YouTube
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="card-desc">
+                                    Ulugbek Samigjonov made a great contribution to my path in programming with his free video lessons. As a result of continuous practical lessons, I gained strong foundational knowledge in web development. I consider it one of the most effective free educational resources in the Uzbek language.
+                                </p>
+                            </article>
+
+                            <!-- Mentor 2 -->
+                            <article class="info-card">
+                                <div class="card-header">
+                                    <div class="mentor-title">
+                                        <h3>Anvar Narzullaev</h3>
+                                    </div>
+                                    <div class="social-badges">
+                                        <a href="https://t.me/sariqdev" target="_blank" rel="noopener noreferrer" class="badge tg">
+                                            <i class="fa-brands fa-telegram"></i> Telegram
+                                        </a>
+                                        <a href="https://www.youtube.com/c/AnvarNarzullaev" target="_blank" rel="noopener noreferrer" class="badge yt">
+                                            <i class="fa-brands fa-youtube"></i> YouTube
+                                        </a>
+                                        <a href="https://github.com/anvarnarz" target="_blank" rel="noopener noreferrer" class="badge gh">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="card-desc">
+                                    Anvar Narzullaev is my respected mentor in Python programming. Learning through his video tutorials and the <a href="https://python.sariq.dev/" target="_blank" rel="noopener noreferrer" class="inline-link">SariqDev</a> platform made understanding computer science concepts and algorithms clear and engaging.
+                                </p>
+                            </article>
+
+                            <!-- Resource 3 -->
+                            <article class="info-card">
+                                <div class="card-header">
+                                    <div class="mentor-title">
+                                        <h3>W3Schools & Documentation</h3>
+                                    </div>
+                                    <div class="social-badges">
+                                        <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer" class="badge web">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="card-desc">
+                                    One of the most comprehensive reference points for mastering HTML, CSS, JavaScript, and standard web technologies. A reliable resource for quick syntax lookup and hands-on coding practice.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Work History & Goal Section -->
+                    <section class="content-block">
+                        <div class="block-title">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h2>Work & Experience</h2>
+                        </div>
+                        <div class="info-card highlight-card">
+                            <p>
+                                I am actively expanding my practical software development experience by building real-world projects. I construct dedicated portfolios for every technology stack I learn, applying best practices in clean code and responsive design. 
+                            </p>
+                            <p style="margin-top: 10px;">
+                                My immediate goals are taking on freelance contracts via platforms like Upwork and contributing to collaborative open-source repositories.
+                            </p>
+                            <div class="action-row">
+                                <a href="https://github.com/oybek-muminov" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                    <i class="fa-brands fa-github"></i> Explore GitHub Profile
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section class="content-block">
+                        <div class="block-title">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h2>Featured Projects</h2>
+                        </div>
+
+                        <div class="projects-grid">
+                            <!-- Project 1 -->
+                            <div class="project-card pj1">
+                                <div class="project-overlay">
+                                    <div class="project-badges">
+                                        <span class="project-tag">Next.js 16</span>
+                                        <span class="project-tag">React 19</span>
+                                        <span class="project-tag">Tailwind CSS</span>
+                                    </div>
+                                    <h3 class="project-title">SaaS Landing Page Template</h3>
+                                    <p class="project-snippet">
+                                        A conversion-focused SaaS template with a 1-minute rebrand setup via a single config file, helping founders launch production-ready sites in minutes.
+                                    </p>
+                                    <div class="project-actions">
+                                        <a href="https://mominov8.gumroad.com/l/mhsoo" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                            <span>View Template</span>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="project-card pj2">
+                                <div class="project-overlay">
+                                    <div class="project-badges">
+                                        <span class="project-tag">Next.js</span>
+                                        <span class="project-tag">Supabase</span>
+                                        <span class="project-tag">Full Stack</span>
+                                    </div>
+                                    <h3 class="project-title">Academic Works Platform</h3>
+                                    <p class="project-snippet">
+                                        A research publication repository featuring user authentication, file uploads, personalized dashboards, and a dynamic interactive Chemistry Periodic Table.
+                                    </p>
+                                    <div class="project-actions">
+                                        <a href="https://ilmiy-baza.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                            <span>Live Demo</span>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="project-card pj3">
+                                <div class="project-overlay">
+                                    <div class="project-badges">
+                                        <span class="project-tag">Web Page</span>
+                                        <span class="project-tag">CSS Design</span>
+                                        <span class="project-tag">Open Source</span>
+                                    </div>
+                                    <h3 class="project-title">African Lions Project</h3>
+                                    <p class="project-snippet">
+                                        An educational wildlife page detailing lion habitat fragmentation across Africa and Eurasia, crafted with interactive visuals and modern typography.
+                                    </p>
+                                    <div class="project-actions">
+                                        <a href="https://github.com/oybek-muminov/african-lions" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                            <span>Source Code</span>
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <a href="https://github.com/oybek-muminov" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub: oybek-muminov</span>
+                </a>
+                <span class="footer-copyright">
+                    Oybek Moʻminov © <span id="current-year">2026</span>
+                </span>
             </div>
-            <div class="profil_info">
-                <p><i class="fa fa-briefcase"></i>Developer</p>
-                <p><i class="fa fa-home"></i>Namangan, Uzbekistan</p>
-                <p><i class="fa fa-envelope"></i>oybekmominov227@gmail.com</p>
-            <hr style="margin: 0 5px;">  
-                <h3><i class="fa fa-asterisk"></i>Skills</h3>
-                <p>HTML</p>
-                <div class="percent percents">
-                    <div class="html percents"><p>80%</p></div>
-                </div>
-                <p>CSS</p>
-                <div class="percent percents">
-                    <div class="css percents"><p>70%</p></div>
-                </div>
-                <p>JavaScript</p>
-                <div class="percent percents">
-                    <div class="js percents"><p>60%</p></div>
-                </div>
-                <p>Pyhton</p>
-                <div class="percent percents">
-                    <div class="python percents"><p>50%</p></div>
-                </div>
-            <!-- <hr style="margin: 20px 5px;"> -->
-                <h3><i class="fa fa-globe"></i>Language</h3>
-                <p>O`zbek</p>
-                <div class="percent percents">
-                    <div class="uz percents">
-                        <p>100%</p>
-                    </div>
-                </div>
-                <p>English</p>
-                <div class="percent percents">
-                    <div class="en percents">
-                        <p>50%</p>
-                    </div>
-                </div>
-                <p>Russian</p>
-                <div class="percent percents">
-                    <div class="ru percents">
-                        <p>45%</p>
-                    </div>
-                </div>
-            </div>        
-        </section>
-        <section class="right_section">
-            <div class="about_me">
-                <h2><i class="fa fa-university"></i>Education</h2>
-
-                <p><b>Ulug`bek Samig`jonov / 
-                <a href="https://t.me/ulugbeksamigjonov" target="_blank" rel="noopener noreferrer">Telegram</a> / 
-                <a href="https://www.instagram.com/ulugbeksamigjonov/#" target="_blank" rel="noopener noreferrer">Instagram</a> / 
-                <a href="https://www.youtube.com/c/ulugbeksamigjonov" target="_blank" rel="noopener noreferrer">YouTube</a>
-                </b></p>
-                    <p>Ulugbek Samigjonov made a great contribution to my path in programming with his free video lessons. Although I did not understand what the knowledge I was learning was for, as a result of continuous lessons, I gained a lot of knowledge in this field. I consider it one of the most effective free resources in the Uzbek language.</p>
-                <hr>
-
-                <p><b>Anvar Narzullaev / 
-                <a href="https://t.me/sariqdev" target="_blank" rel="noopener noreferrer">Telegram</a> /
-                <a href="https://www.youtube.com/c/AnvarNarzullaev" target="_blank" rel="noopener noreferrer">YouTube</a> / 
-                <a href="http://github.com/anvarnarz" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </b></p>
-                    <p>Anvar Nazrullaev is my teacher in the Python programming language, which I recommend to everyone. Although this language is easy, it is even easier to learn through the <a href="https://python.sariq.dev/" target="_blank" rel="noopener noreferrer">SariqDev</a> website. Until now, there are free tutorials in Uzbek on the Internet.</p>
-                <hr>
-
-                <p><b>W3Schools.com</b></p>
-                    <p>This is one of the most complete programming tutorials for me. This site still provides free information. I think anyone can go from 0 to a perfect programmer through this site. <a href="http://www.W3Schools.com" target="_blank" rel="noopener noreferrer">Visit</a>.</p>
-
-                
-            <hr>
-
-                <h2><i class="fa fa-suitcase"></i>Work history</h2>
-
-                <p>I am currently expanding my programming experience with personal projects. I have prepared a portfolio for each course and am using the knowledge I have learned in them. My next goals are to open an Upwork page and earn some income from my knowledge. Click the link to visit my GitHub page >>> <a href="https://github.com/oybek-muminov">GitHub</a></p>
-            <hr>
-
-                <h2><i class="fa fa-folder-open"></i>Project examples</h2>
-
-                <div class="projects">
-                    <div class="project pj1">
-                        <div>
-                            <a href="https://mominov8.gumroad.com/l/mhsoo" target="_blank" rel="noopener noreferrer">A conversion-focused SaaS landing page template built with Next.js 16, React 19, and Tailwind CSS v4. Features a 1-minute rebrand setup via a single config file, helping founders launch production-ready sites in minutes.</a>
-                        </div>
-                    </div>
-                    <div class="project pj2">
-                        <div>
-                            <a href="https://ilmiy-baza.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">Academic Works Platform — A full-stack research and academic publication repository built with Next.js and Supabase. Features user authentication, file uploads, personalized dashboards, and a dynamic interactive Chemistry Periodic Table component.</a>
-                        </div>
-                    </div>
-                    <div class="project pj3">
-                        <div>
-                            <a href="https://github.com/oybek-muminov/african-lions" target="_blank" rel="noopener noreferrer">Historically, lions ranged across Africa and Eurasia. Today, their populations are fragmented, primarily found in sub-Saharan Africa and a single population in western India.</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </footer>
     </div>
-    <footer>
-        <p id="year"><i class="fa-brands fa-square-github" id="git_icon"></i><a href="https://github.com/oybek-muminov" target="_blank">GitHub. Oybek Mo`minov © </a></p>
-    </footer>
 
-<!--------------------------------------------------------------->
-
+    <!-- Script for Dynamic Year -->
     <script>
-        let year = new Date().getFullYear();
-        document.getElementById("year").innerHTML += year;
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
     </script>
 </body>
 </html>
