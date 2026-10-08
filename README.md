@@ -18,13 +18,14 @@ Dasturchilik faoliyatim va shaxsiy loyihalarim jamlangan GitHub sahifamga xush k
 
 1. ⚡ **[SaaS Landing Page Template](https://mominov8.gumroad.com/l/mhsoo)** — Next.js 16, React 19 va Tailwind CSS v4 asosida yaratilgan, 1 daqiqada rebrand qilinadigan yuqori konversiyali shablon.
 2. 🔬 **[Academic Works Platform](https://ilmiy-baza.vercel.app/dashboard)** — Ilmiy maqola va tadqiqotlar bazasi (Next.js, Supabase, autentifikatsiya va interaktiv Kimyo davriy jadvali).
-3. 🦁 **[African Lions Project](https://github.com/oybek-muminov/african-lions)** — Yovvoyi tabiat va sherlar populyatsiyasiga bagʻishlangan taʼlimiy web sahifa.
+3. 🎓 **[EduStart](https://mominov8.gumroad.com/l/edu-start)** — Oʻquv va til markazlari uchun HTML, CSS va JavaScript asosida yaratilgan zamonaviy, koʻp tilli (oʻzbek, rus, ingliz) landing page shabloni.
 
 ---
 
 ### 📫 Bogʻlanish (Contact)
 
 - 📧 **Email:** [oybekmominov227@gmail.com](mailto:oybekmominov227@gmail.com)
+- ✈️ **Telegram:** [@oybek_005](https://t.me/oybek_005)
 - 🐙 **GitHub:** [oybek-muminov](https://github.com/oybek-muminov)
 
 🙏 Tashrif buyurganingiz uchun rahmat! Kodlashda omad yor boʻlsin! ✨
